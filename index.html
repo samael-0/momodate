@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
+  </head>
+  <body>
+    <div class="container">
+      <h1 ">Momo date jaam na!!!</h1>
+      <a href="#" id="button1"><button id="btn1">🤭Hunxa 🤭</button></a>
+      <a href="#" id="button2"><button id="btn2">😡Nai Janna😡</button></a>
+    </div>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var button2 = document.getElementById("btn2");
+
+      button2.addEventListener("mouseover", function () {
+        var randomX = Math.random() * 400 - 200; // Random X position between -100px and 100px
+        var randomY = Math.random() * 400 - 200; // Random Y position between -100px and 100px
+
+        button2.style.transform =
+          "translate(" + randomX + "px, " + randomY + "px)";
+      });
+    });
+  </script>
+</html>
