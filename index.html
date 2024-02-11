@@ -37,6 +37,7 @@
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       var button2 = document.getElementById("btn2");
+      button2.style.transition = "transform 0.2s ease";
 
       button2.addEventListener("mouseover", function () {
         var randomX = Math.random() * 400 - 200; // Random X position between -100px and 100px
