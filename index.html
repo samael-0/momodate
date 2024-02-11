@@ -14,6 +14,10 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
   </head>
   <body>
+    <div id="backbox">
+      <button id="back">Back
+      </button>
+    </div>
     <div class="container">
       <h1 ">Momo date jaam na!!!</h1>
       <a href="#" id="button1"><button id="btn1">🤭Hunxa 🤭</button></a>
@@ -46,13 +50,25 @@
     const bm1 = document.getElementById("button1")
     const container = document.querySelector(".container")
     const yay = document.querySelector("#yay")
+    const back = document.querySelector("#backbox")
+    var button2 = document.getElementById("btn2")
 
     bm1.addEventListener('click',function(){
       container.style.display = 'none';
       yay.style.display = "block";
+      backbox.style.display = "block";
+})
+
+
+    back.addEventListener('click',function(){
+      container.style.display = 'block';
+      yay.style.display = "none";
+      backbox.style.display = "block";
+      button2.style.transform = "none";
+
       
-      
-      
-    })
+})
+
+
   </script>
 </html>
