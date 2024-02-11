@@ -14,7 +14,8 @@ body {
   background-image: url("https://media1.tenor.com/m/iD7TB-ISaVgAAAAC/bear-ted.gif");
 
   /* linear-gradient(to bottom right, #ff99b9, #ff77cc, #ff55dd), */
-
+  background-size: auto 100vh; /* Fit height to screen and repeat horizontally */
+  background-repeat: repeat-y repeat-x; /* Repeat vertically and horizontally */
   display: flex;
   justify-content: center; /* Horizontally center content */
   align-items: center; /* Vertically center content */
@@ -57,23 +58,6 @@ h1 {
   margin-bottom: 40px;
   font-size: 50px;
   font-weight: bold;
-  text-shadow: 0 0 10px #fff, /* White glow */ 0 0 20px #fff,
-    /* White glow */ 0 0 30px #fff, /* White glow */ 0 0 40px #ff00e0,
-    /* Pink glow */ 0 0 70px #ff00e0, /* Pink glow */ 0 0 80px #ff00e0; /* Pink glow */
-  animation: neon-glow 1.5s ease-in-out infinite alternate; /* Neon animation */
-}
-
-@keyframes neon-glow {
-  from {
-    text-shadow: 0 0 10px #fff, /* White glow */ 0 0 20px #fff,
-      /* White glow */ 0 0 30px #fff, /* White glow */ 0 0 40px #ff00e0,
-      /* Pink glow */ 0 0 70px #ff00e0, /* Pink glow */ 0 0 80px #ff00e0; /* Pink glow */
-  }
-  to {
-    text-shadow: 0 0 20px #fff, /* White glow */ 0 0 30px #fff,
-      /* White glow */ 0 0 40px #fff, /* White glow */ 0 0 50px #ff00e0,
-      /* Pink glow */ 0 0 80px #ff00e0, /* Pink glow */ 0 0 90px #ff00e0; /* Pink glow */
-  }
 }
 
 a {
