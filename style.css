@@ -13,10 +13,21 @@ body {
 }
 
 .container {
-  border: 3px solid black;
+  /* display: none; */
+  /* border: 3px solid black; */
   width: 40%;
   border-radius: 30px;
   padding-right: 30px;
+  background-color: rgb(248, 244, 236, 0.4);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#yay {
+  display: none;
+}
+
+h3 {
+  font-size: 40px;
 }
 
 h1 {
@@ -120,4 +131,26 @@ button:hover {
   #btn1 {
     margin-bottom: 10px;
   }
+}
+
+/* .made {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: white;
+  padding: 10px;
+} */
+
+.made {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-left: 5px;
+  color: whitesmoke;
+}
+
+#made2 {
+  position: relative;
+  bottom: 0;
+  left: 0;
 }

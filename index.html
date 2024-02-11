@@ -19,7 +19,17 @@
       <a href="#" id="button1"><button id="btn1">🤭Hunxa 🤭</button></a>
       <a href="#" id="button2"><button id="btn2">😡Nai Janna😡</button></a>
     </div>
+    <div id="yay">
+      <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" alt="">
+      <h3>uwu yay 💘💘</h3>
+    </div>
+    <div class="made">
+      <p> created by <a id="made2" href="https://github.com/samael-0">samael-0</a></p>
+    </div>
+      
+   
   </body>
+ 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       var button2 = document.getElementById("btn2");
@@ -32,5 +42,17 @@
           "translate(" + randomX + "px, " + randomY + "px)";
       });
     });
+
+    const bm1 = document.getElementById("button1")
+    const container = document.querySelector(".container")
+    const yay = document.querySelector("#yay")
+
+    bm1.addEventListener('click',function(){
+      container.style.display = 'none';
+      yay.style.display = "block";
+      
+      
+      
+    })
   </script>
 </html>
